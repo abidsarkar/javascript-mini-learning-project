@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    padding: 20px;
+}
+
+.display {
+    background-color: #222;
+    color: #0f0;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.input {
+    font-size: 1.5rem;
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.output {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.buttonPart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button:active {
+    background-color: #bbb;
+}
+
+.button:nth-child(4n) {
+    background-color: #f99;
+    color: white;
+}
+
+.button:nth-child(4n):hover {
+    background-color: #f77;
+}
+
+/* @media (min-width:1000px){
+    .container{
+        transform: scale(0.4);
+    }
+} */
