@@ -21,7 +21,7 @@ document.querySelectorAll('.button').forEach(button => {
             try {
                 // Evaluate the input using JavaScript's eval function
                 output = eval(input);
-                input = output;
+                input = '0';
             } catch {
                 output = 'Error';
             }
