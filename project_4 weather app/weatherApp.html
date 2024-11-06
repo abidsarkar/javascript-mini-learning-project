@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wether app | Abid | js</title>
+    <link rel="stylesheet" href="weatherStyle.css">
 </head>
 <body>
-    
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="img/search.png" alt="search"></button>
+        </div>
+        <div class="weather">
+            <img src="img/rain.png" alt="rain" class="weatherIcon">
+            <h1  class="temp">22ºc</h1>
+            <h2 class="city">Dhaka</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="img/humidity.png" alt="humidity">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/wind.png" alt="wind" >
+                    <div>
+                        <p class="wind">15Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weatherAppSrc.js"></script>
 </body>
 </html>
