@@ -33,3 +33,6 @@ A simple weather app that fetches real-time weather data for any city using the 
    Clone this repository to your local machine using:
    ```bash
    git clone https://github.com/abidsarkar/javascript-mini-learning-project.git
+2. **Install node package**
+ npm install dotenv
+ <!-- did not work as dotenv is not a clit-side it is only for node.js -->
