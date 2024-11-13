@@ -36,3 +36,21 @@ A simple weather app that fetches real-time weather data for any city using the 
 2. **Install node package**
  npm install dotenv
  <!-- did not work as dotenv is not a clit-side it is only for node.js -->
+## API Key Setup
+Obtain an API key from OpenWeather and replace the placeholder in weatherAppSrc.js:
+const apiKey = "YOUR_API_KEY";
+## Open the App
+Open weatherAApp.html in your browser to start using the app.
+## Usage
+
+    Enter the name of the city you want to check the weather for in the search input.
+    Click the search button to fetch and display the weather data.
+## License
+
+This project is licensed free.
+### Notes:
+1. Make sure to update `YOUR_API_KEY` in `weatherAppSrc.js` with the actual API key from OpenWeather.
+2. Update `https://github.com/your-username/weather-app.git` with your actual GitHub repository URL.
+3. Replace the demo image URL `img/demo.png` with the path to an actual screenshot if you have one. 
+
+Let me know if you need any further customization!
