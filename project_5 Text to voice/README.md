@@ -1,3 +1,4 @@
+![alt text](image.png)
 # Text To Voice AI | ABID
 
 A simple web-based Text-to-Speech (TTS) converter that lets users type text and listen to it spoken aloud. This project leverages the Web Speech API for speech synthesis and allows users to select from available voices in the browser.
