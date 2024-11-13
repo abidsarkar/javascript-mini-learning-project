@@ -15,7 +15,7 @@ async function checkWeather(city) {
     }
   
   //console.log(response);
-  let data = await response.json();
+  const data = await response.json();
   console.log(data);
   document.querySelector(".city").textContent = data.name;
   document.querySelector(".temp").textContent = data.main.temp + `ºc`;
