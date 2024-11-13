@@ -8,9 +8,14 @@ let weatherIcon = document.querySelector(".weatherIcon");
 async function checkWeather(city) {
   //console.log(process.env.API_KEY);
   //apiKey = process.env.API_KEY;
-  const response = await fetch(apiUrl + `${city}&appid=${apiKey}`);
+  try{
+    const response = await fetch(apiUrl + `${city}&appid=${apiKey}`);
+    if(!response.ok){
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+  
   //console.log(response);
-  var data = await response.json();
+  let data = await response.json();
   console.log(data);
   document.querySelector(".city").textContent = data.name;
   document.querySelector(".temp").textContent = data.main.temp + `ºc`;
@@ -22,6 +27,11 @@ async function checkWeather(city) {
 
   weatherIcon.src = `https://openweathermap.org/img/wn/${iconId}@2x.png`;
   //   console.log(iconId);
+}
+
+catch(error){
+  alert("City not found");
+}
 }
 searchBtn.addEventListener("click", () => {
   // console.log(input.value);
