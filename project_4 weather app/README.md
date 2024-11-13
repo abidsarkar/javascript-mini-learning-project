@@ -1,3 +1,4 @@
+![alt text](image.png)
 # Weather App
 
 A simple weather app that fetches real-time weather data for any city using the [OpenWeather API](https://openweathermap.org/). Users can search for a city, and the app displays the temperature, humidity, wind speed, and an icon representing the current weather.
