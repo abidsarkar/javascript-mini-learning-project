@@ -5,3 +5,4 @@ this repository represent my learing fage of js . i try to copy some project fro
 3. the 3rd project is a calculator . i learn how i can get the value and evel function help to do the math.
 4. the 4th project is about a quiz application. where i can chose from mcq.
 5. the 5th project is about a weather application. where we use api to get real time data
+6.
