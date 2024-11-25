@@ -1,7 +1,7 @@
+![alt text](image.png)
+# Calendar Widget | ABID
 
-# Calendar WWidget | ABID
-
-A simple web-based Text-to-Speech (TTS) converter that lets users type text and listen to it spoken aloud. This project leverages the Web Speech API for speech synthesis and allows users to select from available voices in the browser.
+A simple and customizable calendar widget for your web page.
 
 ## Table of Contents
 - [Demo](#demo)
@@ -13,35 +13,39 @@ A simple web-based Text-to-Speech (TTS) converter that lets users type text and 
 - [License](#license)
 
 ## Demo
-You can check out the live version of this project [here](#). (Link the live demo if available)
+You can check out the live version of this project [here](#NoT Available right now). (Link the live demo if available)
 
 ## Features
-- **Text-to-Speech Conversion**: Type any text into the input box and hear it spoken aloud.
-- **Voice Selection**: Choose from available voices to change how the text sounds.
-- **Responsive Design**: Simple and responsive UI built with HTML and CSS.
+- Displays the current date, day of the week, month, and year.
+- Uses a clean and minimal design with a dark background and white calendar section.
+- Responsive layout adjusts to different screen sizes.
+- Easy to customize with CSS for styling preferences.
 
 ## Installation
-1.https://github.com/abidsarkar/javascript-mini-learning-project/tree/0384965fbe0c85515ddf4816ff3c9d39e2abc1eb/project_5%20Text%20to%20voice
+
 
 ## Usage
 
-    Open the project in your web browser.
-    Type or paste text into the text box.
-    Select a voice from the dropdown (if multiple voices are available).
-    Click the "Listen" button to hear the text spoken aloud.
-## Technologies Used
+   Download the files:
+Clone or download the repository to your local machine.
 
-    HTML: Structure of the application.
-    CSS: Styling and layout of the application.
-    JavaScript: Logic for text-to-speech functionality using the Web Speech API.
+Include the files in your HTML:
+Copy the index.html, style.css, and script.js files to your web project directory.
+
+In your main HTML file (e.g., index.html), add the following lines to the <head> section to link the CSS and script files:
+Customization:
+Open the style.css file to modify the styling of the calendar widget to match your project's theme or preferences.
+## Technologies Used
+    HTML: Creates the basic structure of the calendar widget.
+    CSS: Styles the appearance of the calendar widget (colors, fonts, layout).
+    JavaScript: Retrieves the current date information and dynamically updates the HTML content.
 ## Code Overview
 
     index.html: Contains the HTML structure for the Text-to-Voice converter.
     textToVoice.css: CSS for styling the page.
     textToVoice.js: JavaScript logic to initialize the speech synthesis and handle the voice selection.
 ## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions to improve this project! Feel free to fork the repository and submit pull requests with your enhancements.
 ## License
 
 This template includes sections for the purpose, setup, usage, and relevant technologies in the project. Customize as needed, especially with the demo link if you plan to deploy it online.
