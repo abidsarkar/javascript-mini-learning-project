@@ -6,9 +6,8 @@
   font-family: "poppins", sans-serif;
 }
 
-body{
+body {
   background: linear-gradient(45deg, #08001f, #30197d);
-
 }
 .hero {
   width: 100%;
@@ -67,35 +66,70 @@ body{
   color: #fff;
   gap: 25px;
 }
-.container_box .dot{
-    color: #000;
+.container_box .dot {
+  color: #000;
 }
-.isMorning{
-    display: block;
+.isMorning {
+  display: block;
 }
 /* am pm button */
-.h2412{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 10px;
+.h2412 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  z-index: 100;
 }
-.h24, .h12 {
-    background-color: transparent;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
+.h24,
+.h12 {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.h24.active,
+.h12.active {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.am:hover,
+.pm:hover {
+  background-color: #fff;
+  color: #333;
+}
+@media (max-width: 500px) {
+  .hero {
+    /* ... other styles ... */
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 200px;
   }
-  
-  .h24.active, .h12.active {
-    background-color: #f0f0f0;
-    color: #333;
+  .square,.circle{
+    transform: scale(0.7);
   }
-  
-  .am:hover, .pm:hover {
-    background-color: #fff;
-    color: #333;
+  .container {
+    /* ... other styles ... */
+    height: 150px;
+    width: 80%;
+    flex-direction: column; /* Stack time elements vertically */
+    align-items: center;
   }
+
+  .hours,
+  .minutes,
+  .seconds,
+  .h2412,
+  .isMorning {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .dot {
+    font-size: 2rem;
+  }
+}
