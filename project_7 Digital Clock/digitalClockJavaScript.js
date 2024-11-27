@@ -1,20 +1,47 @@
-//gating the dom info
-const domHours = document.querySelector('.hours');
-const domMinutes = document.querySelector('.minutes');
-const domSeconds = document.querySelector('.seconds');
-//get the real time Timing
+const hours = document.querySelector('.hours p');
+const minutes = document.querySelector('.minutes p');
+const seconds = document.querySelector('.seconds p');
+const h24Button = document.querySelector('.h24');
+const h12Button = document.querySelector('.h12');
+const isMorning = document.querySelector('.isMorning');
+let is24HourFormat = false;
+
 function updateClock() {
-    const now = new Date();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2,  
-   '0');
-    const seconds = now.getSeconds().toString().padStart(2,  
-   '0');
-  
-    domHours.textContent = hours;
-    domMinutes.textContent = minutes;
-    domSeconds.textContent = seconds;
+  const now = new Date();
+  let hour = now.getHours();
+  const minute = now.getMinutes().toString().padStart(2, '0');
+  const second = now.getSeconds().toString().padStart(2, '0');
+
+  if (is24HourFormat) {
+    hours.textContent = hour;
+    isMorning.style.display = "none"
+  } else {
+    // 12-hour format
+    if(hour>12){
+        isMorning.textContent = 'PM';
+    }
+    hour = hour % 12 || 12;
+    hours.textContent = hour;
+    isMorning.style.display = "block"
+    
   }
-  
-  // Update the clock every second
-  setInterval(updateClock, 1000);
+
+  minutes.textContent = minute;
+  seconds.textContent = second;
+}
+
+setInterval(updateClock, 1000);
+
+h24Button.addEventListener('click', () => {
+  is24HourFormat = true;
+  h24Button.classList.add('active');
+  h12Button.classList.remove('active');
+  updateClock();
+});
+
+h12Button.addEventListener('click', () => {
+  is24HourFormat = false;
+  h12Button.classList.add('active');
+  h24Button.classList.remove('active');
+  updateClock();
+});
