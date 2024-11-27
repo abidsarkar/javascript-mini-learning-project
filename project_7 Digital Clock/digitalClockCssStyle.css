@@ -1,7 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #08001f, #30197d);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 150px;
+  width: 60%;
+  position: relative;
+}
+.container_box {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  z-index: 100;
+}
+.square {
+  height: 130px;
+  width: 130px;
+  background: #cd0877;
+  border-radius: 10px;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 2;
+}
+.circle {
+  height: 130px;
+  width: 130px;
+  background: #0892cd;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  z-index: 2;
+}
+.container_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #fff;
+  gap: 25px;
+}
+.container_box .dot{
+    color: #000;
 }
