@@ -1,3 +1,18 @@
+window.onload = function() {
+  const blockForLoader = document.querySelector('.blockForLoader');
+  const loader = document.querySelector('.loader');
+
+  // Initially set display to 'none'
+  blockForLoader.style.display = 'none';
+  loader.style.display = 'block';
+
+  // After 2 seconds, set display to 'flex'
+  setTimeout(() => {
+    blockForLoader.style.display = 'flex';
+    loader.style.display = 'none';
+    
+  }, 1000);
+};
 const hours = document.querySelector('.hours p');
 const minutes = document.querySelector('.minutes p');
 const seconds = document.querySelector('.seconds p');
