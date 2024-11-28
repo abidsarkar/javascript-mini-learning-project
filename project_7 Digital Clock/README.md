@@ -1,6 +1,9 @@
 ![alt text](image-1.png)
+loading screen
 ![alt text](image.png)
+desktop ui
 ![alt text](image-2.png)
+mobile ui
 Digital Clock Project
 
 This project creates a simple digital clock with the following features:
