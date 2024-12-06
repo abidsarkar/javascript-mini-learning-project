@@ -1,10 +1,10 @@
-let eyeIcon = document.getElementById('.eyeIcon');
-let password = document.getElementById('.password');
+let eyeIcon = document.getElementById('eyeIcon');
+let password = document.getElementById('password');
 
 eyeIcon.onclick= ()=>{
-    if(password.type == 'password'){
-        password.type = 'text';
+    if(password.type == "password"){
+        password.type = "text";
     }else{
-        password.type = 'password';
+        password.type = "password";
     }
 }
