@@ -23,6 +23,9 @@ body{
     outline: 0;
     color: #555;
 }
+.inputBox input{
+    font-size: 1.5rem;
+}
 .inputBox img {
     width: 35px;
     cursor: pointer;
