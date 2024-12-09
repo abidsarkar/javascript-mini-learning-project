@@ -1,79 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
-body{
-    background-color: #39297b;
-    color: #fff;
+body {
+  background-color: #39297b;
+  color: #fff;
 }
-h1{
-    text-align: center;
-    text-transform: uppercase;
-    margin: 100px auto 50px;
-    font-weight: 600;
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 100px auto 50px;
+  font-weight: 600;
 }
-form{
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    height: 80px;
-    background-color: #434989;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    border: 1px solid brown;
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  height: 80px;
+  background-color: #434989;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid brown;
 }
-form input{
-    flex: 1;
-    height: 100%;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    color: #fff;
-    font-size: 18px;
-    padding: 0 30px;
+form input {
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 30px;
+}
+form button {
+  padding: 0 40px;
+  height: 100%;
+  background-color: #ff3929;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+#showMoreBtn {
+  background-color: #ff3929;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 10px auto 100px;
+  cursor: pointer;
+  display: none;
+}
+#searchResult {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+#searchResult img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* error handling */
+#warningMessage {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow1 1s ease-in-out infinite alternate;
+  -moz-animation: glow1 1s ease-in-out infinite alternate;
+  animation: glow1 1s ease-in-out infinite alternate;
+}
 
+@-webkit-keyframes glow1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
-form button{
-    padding: 0 40px;
-    height: 100%;
-    background-color: #ff3929;
-    color: #fff;
-    font-size: 18px;
-    border: 0;
-    outline: 0;
-    border-radius:0 10px 10px 0;
-    cursor: pointer;
-}
-::placeholder{
-    color: #fff;
-    font-size: 18px;
-}
-#showMoreBtn{
 
-    background-color: #ff3929;
-    color: #fff;
-    border: 0;
-    outline: 0;
-    padding: 10px 20px;
-    border-radius: 4px;
-    margin: 10px auto 100px;
-    cursor: pointer;
-    display: none;
+.redGlow {
+  border: 1px solid red;
+  box-shadow: 0 0 5px red; /* Add a red shadow for glowing effect */
+  animation: glow 1s infinite alternate; /* Optional animation for pulsating glow */
 }
-#searchResult{
-    width: 80%;
-    margin: 100px auto 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px red;
+  }
+  to {
+    box-shadow: 0 0 10px red;
+  }
 }
-#searchResult img{
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 5px;
-}
+
