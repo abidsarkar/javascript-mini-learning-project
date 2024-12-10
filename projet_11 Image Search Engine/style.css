@@ -1,138 +1,185 @@
+/* General Reset */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+/* Body */
 body {
   background-color: #39297b;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
+
+/* Header */
 h1 {
   text-align: center;
   text-transform: uppercase;
-  margin: 100px auto 50px;
+  margin: 50px auto 30px;
   font-weight: 600;
+  font-size: 24px;
 }
+
+/* Form */
 form {
   width: 90%;
   max-width: 600px;
   margin: auto;
-  height: 80px;
+  height: 50px;
   background-color: #434989;
   display: flex;
   align-items: center;
   border-radius: 10px;
   border: 1px solid brown;
+  overflow: hidden;
 }
+
 form input {
   flex: 1;
   height: 100%;
-  border: 0;
-  outline: 0;
+  border: none;
+  outline: none;
   background: transparent;
   color: #fff;
-  font-size: 18px;
-  padding: 0 30px;
+  font-size: 16px;
+  padding: 0 15px;
 }
+
 form button {
-  padding: 0 40px;
+  padding: 0 20px;
   height: 100%;
   background-color: #ff3929;
   color: #fff;
-  font-size: 18px;
-  border: 0;
-  outline: 0;
-  border-radius: 0 10px 10px 0;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
 }
+
+/* Placeholder Styling */
 ::placeholder {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
+
+/* Show More Button */
 #showMoreBtn {
   background-color: #ff3929;
   color: #fff;
-  border: 0;
-  outline: 0;
+  border: none;
   padding: 10px 20px;
   border-radius: 4px;
-  margin: 10px auto 100px;
+  margin: 10px auto;
   cursor: pointer;
-  display: none;
+  display: block;
+  text-align: center;
 }
+
+/* Search Results Grid */
 #searchResult {
-  width: 80%;
-  margin: 100px auto 50px;
+  width: 90%;
+  margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 20px;
 }
+
+/* Adjust Image Container */
+#searchResult .img1 {
+  position: relative;
+}
+
 #searchResult img {
   width: 100%;
-  height: 230px;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
-#searchResult .img1{
-  position: relative;
-}
-/* download btn */
+
+/* Download Button */
 .downloadBtn {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   width: 30px;
   height: 30px;
-  padding: 0 5px 0 5px;
-  outline: none;
-  border: none;
-  border-radius: 50%;
   position: absolute;
-  top: 85%;
+  top: 10px;
   right: 10px;
-  transform: translateY(-50%); /* Center the button vertically */
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: none;
   color: #fff;
+  cursor: pointer;
+  z-index: 1;
 }
-/* error handling */
+
+/* Warning Message */
 #warningMessage {
   display: none;
-  margin-top: 20px;
   text-align: center;
   color: #fff;
-  text-align: center;
-  -webkit-animation: glow1 1s ease-in-out infinite alternate;
-  -moz-animation: glow1 1s ease-in-out infinite alternate;
+  margin: 10px auto;
   animation: glow1 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+/* Media Queries for Responsiveness */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  #searchResult {
+    grid-template-columns: 1fr 1fr; /* Adjust to 2 columns */
+    grid-gap: 15px;
   }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+  form {
+    height: 60px;
+  }
+
+  form input {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  form button {
+    font-size: 14px;
+  }
+
+  #showMoreBtn {
+    font-size: 14px;
   }
 }
 
-.redGlow {
-  border: 1px solid red;
-  box-shadow: 0 0 5px red; /* Add a red shadow for glowing effect */
-  animation: glow 1s infinite alternate; /* Optional animation for pulsating glow */
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 5px red;
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  #searchResult {
+    grid-template-columns: 1fr; /* Adjust to 1 column */
+    grid-gap: 10px;
   }
-  to {
-    box-shadow: 0 0 10px red;
+
+  h1 {
+    font-size: 20px;
+    margin: 30px auto;
+  }
+
+  form {
+    height: 50px;
+  }
+
+  form input {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  form button {
+    font-size: 12px;
+  }
+
+  #showMoreBtn {
+    font-size: 12px;
+    padding: 8px 15px;
   }
 }
-
