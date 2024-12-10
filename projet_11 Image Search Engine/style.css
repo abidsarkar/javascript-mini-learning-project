@@ -94,7 +94,7 @@ form button {
 
 #searchResult img {
   width: 100%;
-  height: auto;
+  height: 230px;
   object-fit: cover;
   border-radius: 5px;
 }
