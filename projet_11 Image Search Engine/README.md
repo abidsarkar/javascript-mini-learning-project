@@ -29,5 +29,14 @@ Prerequisites
 ```sh
 let key = "your_api_key";
 ```
+## Usage 🖥️
 
+1. Enter a keyword in the search box.
+2. Click the Search button to fetch images.
+3. Use the Download button on any image to save it.
+4. Click Show More to load additional results.
+## Contributing 🤝
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the issues page (replace with your repository issues link).
 [Live Demo]: <https://abidsarkar.github.io/LIVE/>
