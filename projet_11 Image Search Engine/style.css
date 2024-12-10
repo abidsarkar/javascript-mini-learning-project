@@ -75,6 +75,29 @@ form button {
   object-fit: cover;
   border-radius: 5px;
 }
+#searchResult .img1{
+  position: relative;
+}
+/* download btn */
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 0 5px 0 5px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 85%;
+  right: 10px;
+  transform: translateY(-50%); /* Center the button vertically */
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: #fff;
+}
 /* error handling */
 #warningMessage {
   display: none;
