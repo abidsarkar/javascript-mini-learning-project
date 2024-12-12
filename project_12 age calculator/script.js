@@ -2,7 +2,7 @@ let userInput = document.getElementById("date");
 let btn = document.getElementById("btn");
 // console.log(userInput);
 userInput.max = new Date().toISOString().split("T")[0];
-
+let result = document.getElementById("result");
 btn.addEventListener("click", () => {
   let birthDate = new Date(userInput.value);
   let d1 = birthDate.getDate();
@@ -28,14 +28,14 @@ btn.addEventListener("click", () => {
   } else {
     m3--;
     d3 = getDaysInMonth(y1, m1) + d2 - d1;
-    
   }
-  if(m3 <0){
+  if (m3 < 0) {
     m3 = 11;
     y3--;
   }
-//   console.log(`date = ${d3}, month = ${m3}, year = ${y3}`);
+  result.innerHTML = `date = ${d3}: month = ${m3}: year = ${y3}`;
+  //   console.log(`date = ${d3}, month = ${m3}, year = ${y3}`);
 });
- function getDaysInMonth (year, month) {
-    return new Date(year, month, 0).getDate();
-  };
+function getDaysInMonth(year, month) {
+  return new Date(year, month, 0).getDate();
+}
