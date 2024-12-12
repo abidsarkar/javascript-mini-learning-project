@@ -33,7 +33,7 @@ btn.addEventListener("click", () => {
     m3 = 11;
     y3--;
   }
-  result.innerHTML = `date = ${d3}: month = ${m3}: year = ${y3}`;
+  result.innerHTML = `date :<span>${d3}</span> month : <span>${m3}</span> year : <span>${y3}</span>`;
   //   console.log(`date = ${d3}, month = ${m3}, year = ${y3}`);
 });
 function getDaysInMonth(year, month) {
