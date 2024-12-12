@@ -64,3 +64,11 @@
     background-size: 30px;
     cursor: pointer;
 }
+#result{
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#result span{
+    color: #ffff76;
+}
