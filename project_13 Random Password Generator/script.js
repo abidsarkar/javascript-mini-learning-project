@@ -17,6 +17,14 @@ function createPassword(){
     passwordBox.value = password;
     console.log(password);
 }
+// action the button
 const btnGenerate = document.getElementById("btnGenerate").addEventListener("click",()=>{
     createPassword();
 });
+// copy the btn
+const copy = document.getElementById("copy");
+copy.addEventListener('click',()=>{
+    passwordBox.select();
+    document.execCommand('copy');
+});
+
