@@ -15,7 +15,7 @@ function createPassword(){
         password +=allChars[Math.floor(Math.random()*allChars.length)];
     }
     passwordBox.value = password;
-    console.log(password);
+    // console.log(password);
 }
 // action the button
 const btnGenerate = document.getElementById("btnGenerate").addEventListener("click",()=>{
@@ -23,8 +23,19 @@ const btnGenerate = document.getElementById("btnGenerate").addEventListener("cli
 });
 // copy the btn
 const copy = document.getElementById("copy");
-copy.addEventListener('click',()=>{
-    passwordBox.select();
-    document.execCommand('copy');
-});
-
+copy.addEventListener('click', async () => {
+    try {
+      const text = passwordBox.value;
+      if(text===''){
+        // console.log("unsuccess");
+      }
+      else{
+        await navigator.clipboard.writeText(text);
+        // console.log("success");
+      }
+      
+    } catch (err) {
+      console.error("Failed to copy to clipboard:", err);
+      // Show error message (optional)
+    }
+  });
