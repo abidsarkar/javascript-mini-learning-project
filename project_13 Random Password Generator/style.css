@@ -32,7 +32,15 @@ body{
 }
 .container h1 span{
     color: #019f55;
+    border-bottom: 4px solid #019f55;
 }
 .container .display img{
     height: 30px;
+    cursor: pointer;
+    color: #019f55;
+}
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
 }
