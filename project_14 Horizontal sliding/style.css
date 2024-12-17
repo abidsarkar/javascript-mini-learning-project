@@ -8,6 +8,20 @@
 body{
     background-color: #8c6767;
 }
+#backBtn,
+#nextBtn{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.galleryWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
 .gallery{
     width: 900px;
     display: flex;
@@ -29,11 +43,4 @@ body{
 }
 .gallery::-webkit-scrollbar{
     display: none;
-}
-.galleryWrap img{
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    border-radius: 50%;
-    
 }
