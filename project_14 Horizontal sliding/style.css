@@ -40,7 +40,15 @@ body{
     height: 100px; */
     width: 300px;
     height: 300px;
+    filter: grayscale(1);
+
 }
 .gallery::-webkit-scrollbar{
     display: none;
+}
+
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
 }
