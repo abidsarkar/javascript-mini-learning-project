@@ -26,7 +26,7 @@ body{
 .gallery{
     width: 900px;
     display: flex;
-    gap: 200px;
+    gap: 60px;
     overflow-x: scroll;
 }
 .gallery-inner{
