@@ -5,3 +5,28 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
+body{
+    background-color: #8c6767;
+}
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    /* width: 100px;
+    height: 100px; */
+    width: 300px;
+    height: 300px;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
