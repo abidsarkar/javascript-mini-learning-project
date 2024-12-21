@@ -18,9 +18,34 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    gap: 5px;
     width: 400px;
     height: auto;
     min-height: 200px;
     padding: 20px;
-    background: #fff;
+    background: #4068c6;
+    border-radius: 5px;
 }
+
+.container input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+.container button{
+    padding: 5px 10px;
+    background: #0d523b;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    width: 80px;
+    margin: 0 auto;
+}
+#qrcode {
+    width:160px;
+    height:160px;
+    margin-top:15px;
+  }
+  
+  
