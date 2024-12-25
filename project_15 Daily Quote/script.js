@@ -30,12 +30,11 @@ getQuote();
 const cpy = document.querySelector(".cpy");
 cpy.addEventListener('click', async () => {
     try {
-      const text = passwordBox.value;
-      if(text===''){
+      if(quote===''){
         // console.log("unsuccess");
       }
       else{
-        await navigator.clipboard.writeText(text);
+        await navigator.clipboard.writeText(quote.textContent);
         // console.log("success");
       }
       
