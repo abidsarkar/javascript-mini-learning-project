@@ -26,6 +26,9 @@ buttons.forEach(button =>{
         if(message.includes('Invalid')){
             toast.classList.add('Invalid');
         }
+        setTimeout(()=>{
+            toast.remove();
+        },6000);
     })
 })
 
