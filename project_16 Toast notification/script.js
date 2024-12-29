@@ -6,9 +6,15 @@ buttons.forEach(button =>{
         let message = button.getAttribute('data-message');
         let icon = button.getAttribute('data-icon');
         let str;
-        if(icon==='success'){
-            str="<i class="fa-solid fa-circle-check"></i>";
-        }
+        if (icon === 'success') {
+            str = '<i class="fa-solid fa-circle-check"></i>';
+          }
+          if (icon === 'error') {
+            str = '<i class="fa-solid fa-circle-xmark"></i>';
+          }
+          if (icon === 'Invalid') {
+            str = '<i class="fa-solid fa-circle-exclamation"></i>';
+          }
         let toast = document.createElement("div");
         // add the class toast
         toast.classList.add('toast');
@@ -16,7 +22,7 @@ buttons.forEach(button =>{
         // <i class="fa-solid fa-circle-xmark"></i>
         //<i class="fa-solid fa-circle-exclamation"></i>
         
-        toast.innerHTML =`${icon}--${message}`;
+        toast.innerHTML = `${str} ${message}`;
         toastBox.appendChild(toast);
     })
 })
