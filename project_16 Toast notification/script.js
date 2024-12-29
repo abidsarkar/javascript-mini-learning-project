@@ -17,13 +17,15 @@ buttons.forEach(button =>{
           }
         let toast = document.createElement("div");
         // add the class toast
-        toast.classList.add('toast');
-        //<i class="fa-solid fa-circle-check"></i>
-        // <i class="fa-solid fa-circle-xmark"></i>
-        //<i class="fa-solid fa-circle-exclamation"></i>
-        
+        toast.classList.add('toast'); 
         toast.innerHTML = `${str} ${message}`;
         toastBox.appendChild(toast);
+        if(message.includes('error')){
+            toast.classList.add('error');
+        }
+        if(message.includes('Invalid')){
+            toast.classList.add('Invalid');
+        }
     })
 })
 
