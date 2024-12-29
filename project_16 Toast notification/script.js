@@ -28,7 +28,7 @@ buttons.forEach(button =>{
         }
         setTimeout(()=>{
             toast.remove();
-        },6000);
+        },5000);
     })
 })
 
