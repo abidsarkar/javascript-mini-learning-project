@@ -44,6 +44,13 @@ body {
   align-items: center;
   border-radius: 10px;
   position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+@keyframes moveleft {
+  100%{
+    transform: translateX(0);
+  }
 }
 .toast i{
   margin: 0 20px;
