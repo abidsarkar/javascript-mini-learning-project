@@ -48,3 +48,9 @@ body {
   font-size: 35px;
   color: green;
 }
+.toast.error i{
+  color: red;
+}
+.toast.Invalid i{
+  color: orange;
+}
