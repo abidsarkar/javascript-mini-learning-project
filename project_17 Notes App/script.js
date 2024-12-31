@@ -1,6 +1,7 @@
 const notesContainer = document.querySelector(".notesContainer");
 const createBtn = document.querySelector(".btn");
 let notes = document.querySelectorAll(".inputBox");
+//click to add the text area
 createBtn.addEventListener("click", () => {
   let inputBox = document.createElement("div");
   let textarea = document.createElement("textarea");
@@ -12,3 +13,10 @@ createBtn.addEventListener("click", () => {
   inputBox.appendChild(i);
   notesContainer.appendChild(inputBox);
 });
+//click on delete icon to remove the text area
+notesContainer.addEventListener("click", function (e) {
+  if (e.target.tagName === "I") {
+    e.target.parentElement.remove();
+  }
+});
+
