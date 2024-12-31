@@ -40,3 +40,15 @@
     margin-right: 5px;
     font-size: 16px;
 }
+.inputBox{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 10px;
+}
