@@ -40,22 +40,35 @@
     margin-right: 5px;
     font-size: 16px;
 }
-.inputBox{
+.inputBox {
     position: relative;
     width: 100%;
     max-width: 500px;
-    min-height: 150px;
     background-color: #fff;
     color: #333;
-    padding: 20px;
+    padding: 15px;
     margin: 20px 0;
-    outline: none;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.inputBox i{
-    font-size: 25px;
+
+.inputBox textarea {
+    width: 100%;
+    height: 100px; /* Adjust height for multiline input */
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    resize: none; /* Prevent resizing */
+}
+
+.inputBox i {
     position: absolute;
     bottom: 15px;
     right: 15px;
+    font-size: 25px;
     cursor: pointer;
+    color: #333;
 }
