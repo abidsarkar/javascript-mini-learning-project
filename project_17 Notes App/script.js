@@ -4,9 +4,17 @@ const createBtn = document.querySelector(".btn");
 // Show notes from localStorage
 function showNotes() {
     notesContainer.innerHTML = localStorage.getItem("notes") || "";
-    // Reapply listeners to restored textareas
+
+    // Reapply event listeners to restored textareas and icons
     document.querySelectorAll(".inputBox textarea").forEach(textarea => {
         textarea.addEventListener("keyup", updateStorage);
+    });
+
+    document.querySelectorAll(".inputBox i").forEach(icon => {
+        icon.addEventListener("click", function () {
+            this.parentElement.remove();
+            updateStorage();
+        });
     });
 }
 showNotes();
@@ -27,19 +35,15 @@ createBtn.addEventListener("click", () => {
     inputBox.appendChild(i);
     notesContainer.appendChild(inputBox);
 
-    // Add keyup listener to textarea
+    // Add event listeners for new elements
     textarea.addEventListener("keyup", updateStorage);
+    i.addEventListener("click", function () {
+        inputBox.remove();
+        updateStorage();
+    });
 
     // Update localStorage
     updateStorage();
-});
-
-// Delete note on trash icon click
-notesContainer.addEventListener("click", function (e) {
-    if (e.target.tagName === "I") {
-        e.target.parentElement.remove();
-        updateStorage();
-    }
 });
 
 // Update localStorage
