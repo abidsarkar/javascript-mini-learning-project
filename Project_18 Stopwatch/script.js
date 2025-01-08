@@ -1,5 +1,6 @@
 let [seconds, minutes, hours] = [0, 0, 0];
 let displayTime = document.getElementById("displayTime");
+let timer = null;
 
 function stopwatch() {
   seconds++;
@@ -13,3 +14,17 @@ function stopwatch() {
   }
 }
 
+function watchStart() {
+  if (timer !== null) {
+    clearInterval(timer);
+  }
+  timer = setInterval(stopwatch, 1000);
+}
+//get the btn id
+let stop = document.getElementById("stop");
+let start = document.getElementById("start");
+let reset = document.getElementById("reset");
+
+start.addEventListener("click", () => {
+  watchStart();
+});
