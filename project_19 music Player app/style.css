@@ -5,3 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+.conatiner{
+    width: 100%;
+    height: 100vh;
+}
