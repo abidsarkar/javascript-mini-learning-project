@@ -5,7 +5,19 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-.conatiner{
+.container{
     width: 100%;
     height: 100vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.music-player{
+    background-color: #ffe0e5;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+
 }
