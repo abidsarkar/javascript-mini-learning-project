@@ -33,4 +33,18 @@ nav .circle{
     background-color: #fff;
     color: #f53192;
     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .circle img{
+    width: 20px;
+   
+}
+.songCover{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
 }
