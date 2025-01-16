@@ -7,3 +7,5 @@ this repository represent my learing fage of js . i try to copy some project fro
 5. the 5th project is about a weather application. where we use api to get real time data
 6. the 6th project is a calender widget showing . this project  use builtin date and time function
 7. the project is digital clock with button to show 24/12 and loder when loding the screen.
+8. A simple drag and drop project Where user can drag a object and drop into others box. 
+9. thw Project is about Changing dark mood and Light mood Theme in a same project. 
