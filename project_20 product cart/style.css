@@ -82,3 +82,39 @@
   /* border: 1px solid black;
   border-radius: 50%; */
 }
+/* color */
+.colorSelect{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.colorSelect p{
+  width: 75px;
+}
+.colorSelect span{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.color_1{
+  background-color: red;
+}
+.color_2{
+  background-color: green;
+}
+.color_3{
+  background-color: blue;
+}
+.color_4{
+  background-color: pink;
+}
+.colorSelect input{
+  display: none;
+}
+.colorSelect input:checked + span{
+  transform: scale(0.7);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
