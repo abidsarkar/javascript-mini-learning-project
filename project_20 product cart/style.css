@@ -5,3 +5,25 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    width: 90%;
+    max-width: 750ppx;
+    display: flex;
+}
+.gallery{
+    flex-basis: 47%;
+    background: #241e20;
+}
+.gallery img{
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+}
