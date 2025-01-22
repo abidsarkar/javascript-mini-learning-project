@@ -55,3 +55,16 @@
 .details h3{
     color: #00d874;
 }
+/* form */
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.sizeSelect{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.sizeSelect p{
+    width: 70px;
+}
