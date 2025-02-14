@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6d9d9;
+}
+.inputBox {
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+}
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  background: #f1f1f1;
+  font-size: 18px;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  outline: none;
+  background: #e29393;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.strength-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.strengthBar {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+}
+.strengthBar::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: red;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
