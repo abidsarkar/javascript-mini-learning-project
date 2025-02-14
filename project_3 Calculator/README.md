@@ -25,8 +25,6 @@ This is a simple calculator application built using HTML, CSS, and JavaScript. I
     ```
 3. Open `index.html` in your web browser to start using the calculator.
 
-### Screenshot
-![Calculator Screenshot](<Screenshot 2025-02-12 192753.png>)
 
 ### License
 This project is licensed under the MIT License.
