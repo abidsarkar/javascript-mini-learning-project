@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation | Abid</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <img class="fa-paper-plane" src="./img/send-plane-fill.svg" alt="">
+            <div class="inputGroup">
+                <label for="">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+                <span id="nameError">
+                    <!-- Name is required -->
+
+                </span>
+            </div>
+            <div class="inputGroup">
+                <label for="">Phone</label>
+                <input type="text" id="phone" placeholder="Enter your phone number">
+                <span id="phoneError">
+                    <!-- Phone number is required -->
+                </span>
+            </div>
+            <div class="inputGroup">
+                <label for="">Email Id</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <span id="emailError">
+                    <!-- Email is required -->
+                </span>
+            </div>
+            <div class="inputGroup">
+                <label for="">Your Message</label>
+                <textarea name="" id="" rows="5" placeholder="Enter your message"></textarea>
+                <span id="messageError">
+                    <!-- Message is required -->
+                </span>
+            </div>
+            <button>Submit</button>
+            <span id="submitError">
+                <!-- Please fix error -->
+            </span>
+        </form>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
