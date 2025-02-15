@@ -1,44 +1,42 @@
-window.onload = function() {
-  const blockForLoader = document.querySelector('.blockForLoader');
-  const loader = document.querySelector('.loader');
+window.onload = function () {
+  const blockForLoader = document.querySelector(".blockForLoader");
+  const loader = document.querySelector(".loader");
 
   // Initially set display to 'none'
-  blockForLoader.style.display = 'none';
-  loader.style.display = 'block';
+  blockForLoader.style.display = "none";
+  loader.style.display = "block";
 
   // After 2 seconds, set display to 'flex'
   setTimeout(() => {
-    blockForLoader.style.display = 'flex';
-    loader.style.display = 'none';
-    
+    blockForLoader.style.display = "flex";
+    loader.style.display = "none";
   }, 1000);
 };
-const hours = document.querySelector('.hours p');
-const minutes = document.querySelector('.minutes p');
-const seconds = document.querySelector('.seconds p');
-const h24Button = document.querySelector('.h24');
-const h12Button = document.querySelector('.h12');
-const isMorning = document.querySelector('.isMorning');
+const hours = document.querySelector(".hours p");
+const minutes = document.querySelector(".minutes p");
+const seconds = document.querySelector(".seconds p");
+const h24Button = document.querySelector(".h24");
+const h12Button = document.querySelector(".h12");
+const isMorning = document.querySelector(".isMorning");
 let is24HourFormat = false;
 
 function updateClock() {
   const now = new Date();
   let hour = now.getHours();
-  const minute = now.getMinutes().toString().padStart(2, '0');
-  const second = now.getSeconds().toString().padStart(2, '0');
+  const minute = now.getMinutes().toString().padStart(2, "0");
+  const second = now.getSeconds().toString().padStart(2, "0");
 
   if (is24HourFormat) {
     hours.textContent = hour;
-    isMorning.style.display = "none"
+    isMorning.style.display = "none";
   } else {
     // 12-hour format
-    if(hour>12){
-        isMorning.textContent = 'PM';
+    if (hour > 12) {
+      isMorning.textContent = "PM";
     }
     hour = hour % 12 || 12;
     hours.textContent = hour;
-    isMorning.style.display = "block"
-    
+    isMorning.style.display = "block";
   }
 
   minutes.textContent = minute;
@@ -47,16 +45,16 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 
-h24Button.addEventListener('click', () => {
+h24Button.addEventListener("click", () => {
   is24HourFormat = true;
-  h24Button.classList.add('active');
-  h12Button.classList.remove('active');
+  h24Button.classList.add("active");
+  h12Button.classList.remove("active");
   updateClock();
 });
 
-h12Button.addEventListener('click', () => {
+h12Button.addEventListener("click", () => {
   is24HourFormat = false;
-  h12Button.classList.add('active');
-  h24Button.classList.remove('active');
+  h12Button.classList.add("active");
+  h24Button.classList.remove("active");
   updateClock();
 });

@@ -4,7 +4,8 @@ const SearchResult = document.getElementById("searchResult");
 const ShowMoreBtn = document.getElementById("showMoreBtn");
 let keyword = "birds";
 let page = 1;
- let key = "your_api_key";
+
+let key = "your_api_key";
 async function searchImage(keyword) {
   const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${key}&per_page=12`;
   try {
@@ -12,17 +13,17 @@ async function searchImage(keyword) {
     // console.log(response);
     const data = await response.json();
     // console.log(data.total);
-    const warningMessage = document.getElementById('warningMessage');
-    if(data.total===0){
-      warningMessage.style.display = 'block';
-      SearchBox.classList.add('redGlow');
+    const warningMessage = document.getElementById("warningMessage");
+    if (data.total === 0) {
+      warningMessage.style.display = "block";
+      SearchBox.classList.add("redGlow");
     }
-    SearchBox.addEventListener('input', () => {
-      warningMessage.style.display = 'none';
-      SearchBox.classList.remove('redGlow');
+    SearchBox.addEventListener("input", () => {
+      warningMessage.style.display = "none";
+      SearchBox.classList.remove("redGlow");
     });
-    if(page === 1){
-        SearchResult.innerHTML = "";
+    if (page === 1) {
+      SearchResult.innerHTML = "";
     }
     const results = data.results;
     results.forEach((result) => {

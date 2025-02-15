@@ -7,6 +7,7 @@ btn[0].addEventListener("click", () => {
   btn[1].classList.remove("active");
   btn[2].classList.remove("active");
 });
+
 btn[1].addEventListener("click", () => {
   productImg.src = "./img/image2.png";
   btn[0].classList.remove("active");
