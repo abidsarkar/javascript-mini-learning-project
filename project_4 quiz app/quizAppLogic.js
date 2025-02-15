@@ -3,6 +3,7 @@ const questions = [
   {
     question: "Capital of Bangladesh?",
     answers: [
+      
       {
         text: "Dhaka",
         correct: true,
